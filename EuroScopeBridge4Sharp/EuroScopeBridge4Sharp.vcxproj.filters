@@ -27,6 +27,9 @@
     <ClInclude Include="EuroScopeBridge4Sharp.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="CConstInts.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EuroScopeBridge4Sharp.cpp">
@@ -36,6 +39,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="CBridgePlughin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CConstInts.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
