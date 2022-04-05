@@ -21,13 +21,19 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="CBridgePlughin.h">
+    <ClInclude Include="CBridgePlugin.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="EuroScopeBridge4Sharp.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="CConstInts.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EuroScopePlugIn.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -38,10 +44,13 @@
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="CBridgePlughin.cpp">
+    <ClCompile Include="CBridgePlugin.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="CConstInts.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CListener.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

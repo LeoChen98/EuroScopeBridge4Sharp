@@ -1,9 +1,9 @@
 ﻿// dllmain.cpp : 定义 DLL 应用程序的入口点。
 #include "pch.h"
 #include "EuroScopePlugIn.h"
-#include "CBridgePlughin.h"
+#include "CBridgePlugin.h"
 
-CBridgePlughin* gpMyPlugin = NULL;
+CBridgePlugin* gpMyPlugin = NULL;
 
 
 //---EuroScopePlugInInit-----------------------------------------------
@@ -13,7 +13,7 @@ void    __declspec (dllexport)    EuroScopePlugInInit(EuroScopePlugIn::CPlugIn**
    
 
         // create the instance
-        * ppPlugInInstance = gpMyPlugin = new CBridgePlughin();
+        * ppPlugInInstance = gpMyPlugin = new CBridgePlugin();
 }
 
 

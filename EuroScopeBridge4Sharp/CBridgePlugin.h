@@ -9,13 +9,20 @@ const string MY_PLUGIN_VERSION = "0.0.0.0";
 const string MY_PLUGIN_DEVELOPER = "Leo Chen";
 const string MY_PLUGIN_COPYRIGHT= "GPL v3 lisence, Copyrights (c) 2022 zhangbudademao.com, all rights reserved.";
 
-class CBridgePlughin :
+class CBridgePlugin :
     public EuroScopePlugIn::CPlugIn
 {
+private:
+    class CListener;
+
 public:
 
-    CBridgePlughin();
+    CBridgePlugin();
 
-    virtual ~CBridgePlughin();
+    virtual ~CBridgePlugin();
+
+    CListener* pListener;
+
+    virtual void OnRadarTargetPositionUpdate(EuroScopePlugIn::CRadarTarget RadarTarget);
 };
 
