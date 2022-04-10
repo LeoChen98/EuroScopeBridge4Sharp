@@ -36,6 +36,9 @@
     <ClInclude Include="EuroScopePlugIn.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="CPipeClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EuroScopeBridge4Sharp.cpp">
@@ -51,6 +54,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="CListener.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CPipeClient.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

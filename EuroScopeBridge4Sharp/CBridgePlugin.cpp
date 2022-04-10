@@ -3,6 +3,7 @@
 #include "CConstInts.h"
 #include <string>
 #include "CListener.h"
+#include "CPipeClient.h"
 
 CBridgePlugin :: CBridgePlugin(void) : CPlugIn(EuroScopePlugIn::COMPATIBILITY_CODE,
     MY_PLUGIN_NAME.c_str(),
@@ -15,6 +16,7 @@ CBridgePlugin :: CBridgePlugin(void) : CPlugIn(EuroScopePlugIn::COMPATIBILITY_CO
     cout << "EuroScopeBridge4Sharp|Version|" << MY_PLUGIN_VERSION << endl;
     CConstInts::InitMap();
     pListener = new CBridgePlugin::CListener(this);
+    pPipeClient = new CBridgePlugin::CPipeClient(this);
 
 #ifdef _DEBUG
     
@@ -32,3 +34,4 @@ CBridgePlugin :: ~CBridgePlugin(void) {
 void CBridgePlugin::OnRadarTargetPositionUpdate(EuroScopePlugIn::CRadarTarget RadarTarget) {
     pListener -> OnRadarTargetPositionUpdate(RadarTarget);
 }
+
