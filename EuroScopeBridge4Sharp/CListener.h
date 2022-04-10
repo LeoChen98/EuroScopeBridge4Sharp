@@ -17,7 +17,7 @@ public:
 	CListener(CBridgePlugin* MyPlugin);
 	virtual ~CListener();
 
-	virtual void OnRadarTargetPositionUpdate(CRadarTarget RadarTarget);
+	void OnRadarTargetPositionUpdate(CRadarTarget RadarTarget);
 };
 
 
