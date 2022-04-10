@@ -74,7 +74,7 @@ ConnectionFailure:
 }
 
 CBridgePlugin::CPipeClient::~CPipeClient() {
-	Send("\0");
+	SendLine("\0");
 
 	CloseHandle(hUpPipe);
 	CloseHandle(hDownPipe);

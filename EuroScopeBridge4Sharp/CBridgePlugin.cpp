@@ -28,6 +28,8 @@ CBridgePlugin :: CBridgePlugin(void) : CPlugIn(EuroScopePlugIn::COMPATIBILITY_CO
 }
 
 CBridgePlugin :: ~CBridgePlugin(void) {
+    delete pListener;
+    delete pPipeClient;
 
 }
 
