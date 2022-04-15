@@ -13,7 +13,7 @@ CBridgePlugin :: CBridgePlugin(void) : CPlugIn(EuroScopePlugIn::COMPATIBILITY_CO
 {
     //Show loaded message
     DisplayUserMessage("message", "EuroScopeBridge4Sharp", string("Version " + MY_PLUGIN_VERSION + " loaded").c_str(), true, true, false, true, false);
-    cout << "EuroScopeBridge4Sharp|Version|" << MY_PLUGIN_VERSION << endl;
+    //cout << "EuroScopeBridge4Sharp|Version|" << MY_PLUGIN_VERSION << endl;
     CConstInts::InitMap();
     pListener = new CBridgePlugin::CListener(this);
     pPipeClient = new CBridgePlugin::CPipeClient(this);
@@ -35,5 +35,16 @@ CBridgePlugin :: ~CBridgePlugin(void) {
 
 void CBridgePlugin::OnRadarTargetPositionUpdate(EuroScopePlugIn::CRadarTarget RadarTarget) {
     pListener -> OnRadarTargetPositionUpdate(RadarTarget);
+}
+
+void CBridgePlugin::OnAirportRunwayActivityChanged(void) {
+    pListener -> OnAirportRunwayActivityChanged();
+}
+
+bool CBridgePlugin::OnCompileCommand(const char* sCommandLine) {
+    string str_CommandLine = sCommandLine;
+
+
+    return false;
 }
 

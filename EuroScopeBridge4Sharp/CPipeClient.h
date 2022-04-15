@@ -10,12 +10,12 @@ private:
 	CBridgePlugin* gpMyPlugin;
 	HANDLE hUpPipe,hDownPipe;
 
+	void Send(const char* data);
+
 public:
 	CPipeClient(CBridgePlugin* MyPlugin);
 
 	~CPipeClient();
-
-	void Send(const char* data);
 
 	void SendLine(const char* data);
 

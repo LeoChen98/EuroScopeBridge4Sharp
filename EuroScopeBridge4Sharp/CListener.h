@@ -1,5 +1,6 @@
 #include "CBridgePlugin.h"
 #include <iostream>
+#include <sstream> 
 #include "EuroScopePlugIn.h"
 
 
@@ -18,6 +19,8 @@ public:
 	virtual ~CListener();
 
 	void OnRadarTargetPositionUpdate(CRadarTarget RadarTarget);
+
+	void OnAirportRunwayActivityChanged(void);
 };
 
 
