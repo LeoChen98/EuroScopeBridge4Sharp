@@ -49,6 +49,6 @@ void CBridgePlugin::CListener::OnAirportRunwayActivityChanged(void) {
 	}
 
 	gpMyPlugin->pPipeClient->SendLine(s.c_str());
-	gpMyPlugin->DisplayUserMessage("message", "EuroScopeBridge4Sharp", s.c_str(), true, true, false, true, false);
+	//gpMyPlugin->DisplayUserMessage("message", "EuroScopeBridge4Sharp", s.c_str(), true, true, false, true, false);
 }
 
