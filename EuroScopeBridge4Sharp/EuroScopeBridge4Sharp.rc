@@ -51,8 +51,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 0,1,1,1
- PRODUCTVERSION 0,1,1,1
+ FILEVERSION 0,1,2,2
+ PRODUCTVERSION 0,1,2,2
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -69,12 +69,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "zhangbudademao.com"
             VALUE "FileDescription", "A C++ library provides Euroscope data subscription services for C# application. | 一个用于为C#程序提供ES数据订阅服务的C++库。"
-            VALUE "FileVersion", "0.1.1.1"
+            VALUE "FileVersion", "0.1.2.2"
             VALUE "InternalName", "EuroScopeBridge4Sharp.dll"
             VALUE "LegalCopyright", "GPL v3 lisence, Copyrights (c) 2022 zhangbudademao.com, all rights reserved."
             VALUE "OriginalFilename", "EuroScop.dll"
             VALUE "ProductName", "EuroScopeBridge4Sharp"
-            VALUE "ProductVersion", "0.1.1.1"
+            VALUE "ProductVersion", "0.1.2.2"
         END
     END
     BLOCK "VarFileInfo"

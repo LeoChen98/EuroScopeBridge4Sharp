@@ -21,7 +21,7 @@ void    __declspec (dllexport)    EuroScopePlugInInit(EuroScopePlugIn::CPlugIn**
 
 void    __declspec (dllexport)    EuroScopePlugInExit(void)
 {
-
+        delete gpMyPlugin->pPipeClient;
         // delete the instance
         delete gpMyPlugin;
 }
