@@ -15,8 +15,8 @@ CBridgePlugin :: CBridgePlugin(void) : CPlugIn(EuroScopePlugIn::COMPATIBILITY_CO
     DisplayUserMessage("message", "EuroScopeBridge4Sharp", string("Version " + MY_PLUGIN_VERSION + " loaded").c_str(), true, true, false, true, false);
     //cout << "EuroScopeBridge4Sharp|Version|" << MY_PLUGIN_VERSION << endl;
     CConstInts::InitMap();
-    pListener = new CBridgePlugin::CListener(this);
     pPipeClient = new CBridgePlugin::CPipeClient(this);
+    pListener = new CBridgePlugin::CListener(this);
 
 #ifdef _DEBUG
     
